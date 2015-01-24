@@ -34,7 +34,8 @@ ul.no-indent {
 /* SHARED PAGE STYLES */
 
 body {
-    background: url('../img/site-bg.gif') #353433;
+    // this is sass rails specific, think of image-url like wordpress bloginfo(templatle_url) it goes to the images folder in the assets pipeline
+    background: #353433 image-url('site-bg.gif');
     background-size: 25%;
     font-family: 'Open Sans', sans-serif;
 }
@@ -150,7 +151,8 @@ body {
 }
 
 .dotmatrix {
-    background: url('../img/dot-matrix.svg') 50% 0% repeat-y #fff;
+    // this is sass rails specific, think of image-url like wordpress bloginfo(templatle_url) it goes to the images folder in the assets pipeline
+    background: #fff image-url('dot-matrix.svg') 50% 0% repeat-y;
     height: 100%;
     background-size: 50%;
     width: 10%;
