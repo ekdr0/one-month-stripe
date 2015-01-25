@@ -45,6 +45,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use bootstrap for improving look and feel
 gem 'bootstrap-sass'
 
+# Gem required for stripe
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
