@@ -48,6 +48,9 @@ gem 'bootstrap-sass'
 # Gem required for stripe
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
+# Figaro gem for securely managing credentials
+gem "figaro"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
