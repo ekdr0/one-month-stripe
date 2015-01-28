@@ -15,10 +15,8 @@
         </ul>
     </article>
     <aside id="details-aside" class="col-sm-4">
-<!--         <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</a> -->
 
-
-          <%= form_tag charges_path id: 'chargeForm' do %>
+          <%= form_tag charges_path, id: 'chargeForm' do %>
             <script src="https://checkout.stripe.com/checkout.js"></script>
             <%= hidden_field_tag 'stripeToken' %>
             <%= hidden_field_tag 'stripeEmail' %> 

@@ -1,4 +1,5 @@
 class ChargesController < ApplicationController
+	
 	def create
 
 	  customer = Stripe::Customer.create(
@@ -8,7 +9,7 @@ class ChargesController < ApplicationController
 
 	  charge = Stripe::Charge.create(
 	    :customer    => customer.id,
-	    :amount    	 => params:[amount],
+	    :amount    	 => params[:amount],
 	    :description => 'Growth Hacking Crash Course',
 	    :currency    => 'usd'
 	  )
