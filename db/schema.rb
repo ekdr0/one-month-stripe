@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150130011334) do
+ActiveRecord::Schema.define(version: 20150130025823) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -55,6 +55,11 @@ ActiveRecord::Schema.define(version: 20150130011334) do
     t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "length"
+    t.text     "author_image_name"
+    t.string   "author_description"
+    t.string   "details"
+    t.string   "download_url"
   end
 
   create_table "purchases", force: :cascade do |t|
@@ -64,9 +69,9 @@ ActiveRecord::Schema.define(version: 20150130011334) do
     t.string   "currency"
     t.string   "customer_id"
     t.string   "card"
-    t.string   "product_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "product_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "uuid"
   end
 
